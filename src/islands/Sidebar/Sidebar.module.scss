@@ -1,0 +1,19 @@
+.sidebar {
+  @apply flex items-center flex-col justify-between border-r border-border py-5;
+
+  a {
+    @apply mb-8 block;
+
+    &.active > span {
+      @apply text-white;
+    }
+  }
+
+  span {
+    @apply text-[#7c7275] duration-300 ease-in-out transition-colors flex items-center flex-col justify-between;
+
+    &:hover {
+      @apply text-white;
+    }
+  }
+}
